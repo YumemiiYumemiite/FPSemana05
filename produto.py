@@ -1,18 +1,16 @@
 import argparse
 
-
 class Produto:
-    # -------------------------
-    #       ATRIBUTOS
-    # -------------------------
+
+# Atributos
+
     def __init__(self, nome, preco, quantidade):
         self.nome = nome
         self.preco = float(preco)
         self.quantidade = int(quantidade)
 
-    # -------------------------
-    #       MÉTODOS
-    # -------------------------
+   # Métodos
+
     def adicionar_stock(self, quantidade):
         # Só adiciona se quantidade for positiva
         if quantidade > 0:
@@ -34,9 +32,8 @@ class Produto:
         print(f"[{self.nome}] [{self.preco}] [{self.quantidade}]")
 
 
-# ----------------------------------------------------------------------
-#                     NÃO MEXER NO CÓDIGO ABAIXO
-# ----------------------------------------------------------------------
+# Não modificar este bloco
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Gerir um Produto")
     parser.add_argument(
